@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" prefHeight="600.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gtfsapplication.Controller">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem onAction="#handleLoadFiles" text="Import Files..." />
+                        <Menu text="Export Files...">
+                            <items>
+                                <MenuItem onAction="#handleExport" text="Export all" />
+                                <MenuItem onAction="#handleExportStops" text="Export stops" />
+                                <MenuItem onAction="#handleExportStopTimes" text="Export stop times" />
+                                <MenuItem onAction="#handleExportRoutes" text="Export routes" />
+                                <MenuItem onAction="#handleExportTrips" text="Export trips" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <left>
+        <VBox fx:id="vbox" prefHeight="575.0" prefWidth="371.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="35.0" prefWidth="331.0" spacing="30.0">
+                    <children>
+                        <Button onAction="#searchStop" text="Search for Stop" />
+                        <Button onAction="#searchRoute" text="Search for Route" />
+                        <Button onAction="#updateAttributes" text="Update attribute" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </left>
+    <right>
+        <VBox fx:id="vbox1" />
+    </right>
+</BorderPane>

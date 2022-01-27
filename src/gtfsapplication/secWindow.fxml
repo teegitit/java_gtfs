@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gtfsapplication.SecondController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="500.0" spacing="10.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="one" prefHeight="30.0" prefWidth="240.0" text="Field One (ID)" />
+               </children></HBox>
+            <HBox prefHeight="30.0" prefWidth="500.0" spacing="20.0">
+               <children>
+                  <Label fx:id="two" prefHeight="30.0" prefWidth="280.0" text="Field Two" />
+                  <TextField fx:id="fieldTwo" prefHeight="30.0" prefWidth="200.0" />
+               </children></HBox>
+            <HBox prefHeight="30.0" prefWidth="500.0" spacing="20.0">
+               <children>
+                  <Label fx:id="three" prefHeight="30.0" prefWidth="280.0" text="Field Three" />
+                  <TextField fx:id="fieldThree" prefHeight="30.0" prefWidth="200.0" />
+               </children></HBox>
+            <HBox prefHeight="30.0" prefWidth="500.0" spacing="20.0">
+               <children>
+                  <Label fx:id="four" prefHeight="30.0" prefWidth="280.0" text="Field Four" />
+                  <TextField fx:id="fieldFour" prefHeight="30.0" prefWidth="200.0" />
+               </children></HBox>
+            <HBox prefHeight="30.0" prefWidth="500.0" spacing="20.0">
+               <children>
+                  <Label fx:id="five" prefHeight="30.0" prefWidth="280.0" text="Field Five" />
+                  <TextField fx:id="fieldFive" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="500.0" spacing="20.0">
+               <children>
+                  <Label fx:id="six" prefHeight="30.0" prefWidth="280.0" text="Field Six" />
+                  <TextField fx:id="fieldSix" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="500.0" spacing="20.0">
+               <children>
+                  <Label fx:id="seven" prefHeight="30.0" prefWidth="280.0" text="Field Seven" />
+                  <TextField fx:id="fieldSeven" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="500.0" spacing="20.0">
+               <children>
+                  <Label fx:id="eight" prefHeight="30.0" prefWidth="280.0" text="Field Eight" />
+                  <TextField fx:id="fieldEight" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="500.0" spacing="20.0">
+               <children>
+                  <Label fx:id="nine" prefHeight="30.0" prefWidth="280.0" text="Field Nine" />
+                  <TextField fx:id="fieldNine" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <Button fx:id="updateButton" layoutX="250.0" mnemonicParsing="false" onAction="#handleButton" prefHeight="30.0" prefWidth="200.0" text="Click here to update" translateX="300.0" ButtonBar.buttonData="RIGHT" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
